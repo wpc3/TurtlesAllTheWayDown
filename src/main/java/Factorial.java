@@ -1,0 +1,14 @@
+public class Factorial {
+
+ public static Long factorial(int number){
+     long result =1;
+
+     for(int factor = 2; factor <= number; factor++){
+         result *= factor;
+     }
+
+    return result;
+ }
+
+
+}
