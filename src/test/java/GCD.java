@@ -1,3 +1,6 @@
+import java.time.Duration;
+import java.time.Instant;
+
 public class GCD {
 
 
@@ -17,5 +20,13 @@ public class GCD {
         return p;
     }
 
+    public static long compareMethod(){
+        Instant start = Instant.now();
+        // CODE to be timed goes HERE
+
+        Instant finish = Instant.now();
+        long timeElapsed = Duration.between(start, finish).toMillis();
+        return timeElapsed;
+    }
 
 }
